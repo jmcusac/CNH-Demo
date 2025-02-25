@@ -17,5 +17,5 @@ struct CNH_DemoApp: App {
 }
 
 #Preview {
-    CalculatorView()
+    Tokenized_CalculatorView()
 }
