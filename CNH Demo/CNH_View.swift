@@ -16,9 +16,9 @@ struct CalculatorView: View {
                 .font(.largeTitle)
                 .padding()
             
-            TextField("Erik's Expression Input", text: $viewModel.inputExpression)
+            TextField("Erik's String Here", text: $viewModel.inputExpression)
                 .padding()
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+                //we don't need a-z
                 .keyboardType(.decimalPad)
                 .submitLabel(.done)
             

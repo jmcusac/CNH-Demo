@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//calculating the NSNumber result is the simplest part of this challenge
 class CalculatorViewModel: ObservableObject {
     private let calculator = Calculator()
     

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Calculator {
     func evaluate(_ expression: String) -> String {
+        //we spoke about 14 valid buckets pertaining to 0-9 and +-/*
         guard isValidExpression(expression) else {
             return "Invalid expression"
         }
@@ -20,6 +21,7 @@ struct Calculator {
         
         let expr = NSExpression(format: expressionFormatted)
         
+        //solving with NSNumber
         guard let result = expr.expressionValue(with: nil, context: nil) as? NSNumber else {
             return "Error"
         }
@@ -28,14 +30,13 @@ struct Calculator {
     }
     
     private func isValidExpression(_ expression: String) -> Bool {
-        //these are the only characters that were requested to be validated
         let validCharacters = CharacterSet(charactersIn: "0123456789+-/*")
         
         return expression.rangeOfCharacter(from: validCharacters.inverted) == nil
     }
 }
 
-/* original version - no longer needed
+/* original version from interview - no longer needed
  
  switch char {
  case "+": tokens.append(.plus)
