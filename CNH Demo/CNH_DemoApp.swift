@@ -11,7 +11,7 @@ import SwiftUI
 struct CNH_DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            CalculatorView()
+            Tokenized_CalculatorView()
         }
     }
 }
