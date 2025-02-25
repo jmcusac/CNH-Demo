@@ -11,7 +11,11 @@ import SwiftUI
 struct CNH_DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CalculatorView()
         }
     }
+}
+
+#Preview {
+    CalculatorView()
 }
