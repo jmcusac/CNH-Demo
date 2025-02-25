@@ -36,7 +36,9 @@ struct Calculator {
     }
 }
 
-/* original version from interview - no longer needed
+/*
+ 
+ //original version from interview - no longer needed
  
  switch char {
  case "+": tokens.append(.plus)
@@ -44,15 +46,6 @@ struct Calculator {
  case "*", "×": tokens.append(.multiply)
  case "/", "÷": tokens.append(.divide)
  default: tokens.append(.unknown(char))
- }
- 
- enum Token {
- case number(Double)
- case plus
- case minus
- case multiply
- case divide
- case unknown(Character)
  }
  
  */
